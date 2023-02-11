@@ -1,6 +1,6 @@
 # E-Commerce Website
 
-The website is an e-commerce platform built using React and Node.js. React is used to create the front-end, allowing for dynamic and interactive components, while Node.js is used for the back-end, providing server-side code execution and integration with the front-end. The website uses Express as its server, MongoDB to store user account information, Stripe API for handling financial transactions, and Google Maps API to display the company's location on the Contact Us page. Other technologies include FontAwesome for styling, Redux for state management, Bootstrap for enhancing design, and Axios for making HTTP requests to the back-end.
+The website is an e-commerce platform built using React and Node.js. React is used to create the front-end, allowing for dynamic and interactive components, while Node.js is used for the back-end, providing server-side code execution and integration with the front-end. The website uses Express as its server, MongoDB to store user account information, Stripe API for handling financial transactions, and Google Maps API to display the company's location on the Contact Us page. Other technologies include FontAwesome for styling, Redux for state management, Bootstrap & Material UI for enhancing design, and Axios for making HTTP requests to the back-end.
 
 
 ## Tech Stack
@@ -32,6 +32,10 @@ The website is an e-commerce platform built using React and Node.js. React is us
 * [Bootstrap](https://getbootstrap.com/)
     * A CSS framework that provides a set of pre-designed UI components and styles that can be easily customized and used in web
         applications. Bootstrap is used to enhance the design aspect of the website, making it easier to create a visually appealing and user-friendly experience.
+* [MaterialUI](https://mui.com)
+    * a popular React-based framework for building user interfaces with a material design look and feel, offering pre-designed and
+        customizable components following Google's guidelines. MaterialUI is used to enhance the design aspect of the website, making 
+        it easier to create a visually appealing and user-friendly experience.
 * [Axios](https://axios-http.com/)
     * A Promise-based HTTP client for JavaScript. Axios is used to make HTTP requests for your Node back-end, allowing you me to easily
         retrieve and update data from the server.
