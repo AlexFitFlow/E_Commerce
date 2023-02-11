@@ -1,6 +1,12 @@
 # E-Commerce Website
 
-The website is an e-commerce platform built using React and Node.js. React is used to create the front-end, allowing for dynamic and interactive components, while Node.js is used for the back-end, providing server-side code execution and integration with the front-end. The website uses Express as its server, MongoDB to store user account information, Stripe API for handling financial transactions, and Google Maps API to display the company's location on the Contact Us page. Other technologies include FontAwesome for styling, Redux for state management, Bootstrap & Material UI for enhancing design, and Axios for making HTTP requests to the back-end.
+The Fitness Warehouse e-commerce platform is built using React and Node.js, with the front-end being created in React for a dynamic and interactive user experience. Styling is achieved using FontAwesome, Bootstrap, and the AOS library for animations triggered when the user scrolls the page. The back-end is implemented using Node.js and Express, and data is stored using MongoDB, which also serves as the user account information database. Stripe API is used to process financial transactions. The state management of the application is handled using Redux, making it easier to manage the data and ensure consistency throughout the application.
+
+The product details page displays individual product information, including images, descriptions, and additional information. The product list page also has filters to sort products based on their category. The checkout page displays an order summary of items in the cart, which is stored in the Redux store, allowing users to add and remove products as they see fit and keep track of the total cost. When the user is ready to make a purchase, the shopping cart feature handles the financial transactions through the Stripe API, a secure and efficient payment processing platform that provides a wide range of tools and APIs for accepting payments online, ensuring a seamless purchase process for the user with their financial information kept safe.
+
+The platform has a Contact Us page with a Google Maps API integration to display the location of the company with office information. Additionally, there is a light/dark mode feature for the user interface, allowing users to switch between modes and store their preferred theme in local storage. This feature contributes to the overall user-friendly experience of the platform.
+
+In conclusion, the e-commerce platform is a well-rounded and complete solution for those looking to build an online store. It has a dynamic front-end, a secure back-end, and a range of features that make it easy for users to browse and purchase products. The use of a variety of technologies, including React, Node.js, MongoDB, Stripe API, and Redux, ensures a high level of reliability and performance.
 
 
 ## Tech Stack
@@ -33,7 +39,7 @@ The website is an e-commerce platform built using React and Node.js. React is us
     * A CSS framework that provides a set of pre-designed UI components and styles that can be easily customized and used in web
         applications. Bootstrap is used to enhance the design aspect of the website, making it easier to create a visually appealing and user-friendly experience.
 * [MaterialUI](https://mui.com)
-    * a popular React-based framework for building user interfaces with a material design look and feel, offering pre-designed and
+    * A popular React-based framework for building user interfaces with a material design look and feel, offering pre-designed and
         customizable components following Google's guidelines. MaterialUI is used to enhance the design aspect of the website, making 
         it easier to create a visually appealing and user-friendly experience.
 * [Axios](https://axios-http.com/)
