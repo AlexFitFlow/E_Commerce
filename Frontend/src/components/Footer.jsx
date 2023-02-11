@@ -65,8 +65,8 @@ const Footer = () => {
       
       {/* Social Media */}
       <div className="footer_social_area" style={{ display: 'flex', justifyContent: 'center' }} >
-              <a href="https://linkedin.com" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i className="fa fa-linkedin"></i></a>
-              <a href="https://github.com" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest"><i className="fa fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/alex-amiriyan/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i className="fa fa-linkedin"></i></a>
+              <a href="https://github.com/AlexFitFlow" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest"><i className="fa fa-github"></i></a>
               <a href="https://instagram.com" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype"><i className="fa fa-instagram"></i></a>
               <a href="https://twitter.com" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><i className="fa fa-twitter"></i></a>
       </div>

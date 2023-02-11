@@ -135,14 +135,14 @@ const ContactPage = () => {
 
             {/* Linkedin */}
             <li>
-              <a href="https://linkedin.com"  className="contact-icon">
+              <a href="https://www.linkedin.com/in/alex-amiriyan/"  className="contact-icon">
                 <i className="fa fa-linkedin" aria-hidden="true" />
               </a>
             </li>
 
             {/* Github */}
             <li>
-              <a href="https://github.com"  className="contact-icon">
+              <a href="https://github.com/AlexFitFlow"  className="contact-icon">
                 <i className="fa fa-github" aria-hidden="true" />
               </a>
             </li>
