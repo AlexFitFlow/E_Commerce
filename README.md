@@ -1,4 +1,4 @@
-# E-Commerce Website
+# Fitness Warehouse
 
 The Fitness Warehouse e-commerce platform is built using React and Node.js, with the front-end being created in React for a dynamic and interactive user experience. Styling is achieved using FontAwesome, Bootstrap, and the AOS library for animations triggered when the user scrolls the page. The back-end is implemented using Node.js and Express, and data is stored using MongoDB, which also serves as the user account information database. Stripe API is used to process financial transactions. The state management of the application is handled using Redux, making it easier to manage the data and ensure consistency throughout the application.
 
