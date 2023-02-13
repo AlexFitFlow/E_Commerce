@@ -2,6 +2,11 @@
   "name": "e_commerce",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexFitFlow/E_Commerce.git",
+    "directory": "/Frontend"
+  },
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
