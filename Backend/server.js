@@ -15,7 +15,7 @@ async function createStripeProduct(product, options = {}) {
 		.create({
 			name: product.title,
 			desciption: product.desciption,
-			images: product?.image ? [`${YOUR_DOMAIN}${product.image.slice(1)}`] : [],
+			images: product.image ? [`${YOUR_DOMAIN}${product.image.slice(1)}`] : [],
 			metadata: {
 				product_title: product.title,
 				data_id: product.id,

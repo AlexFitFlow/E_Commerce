@@ -83,7 +83,7 @@ const Products = () => {
 									{/* Image Hover Effect */}
 									<div className='box w-content'>
 										{/* Product Image */}
-										<img className='card-img-top p-3 box-shadow' src={product.image} alt='Card' height={300} />
+										<img className='card-img-top p-3 box-shadow' src={product.image} alt={product.title} height={300} />
 
 										{/* Image Hover Effect */}
 										<div className='frame'></div>
