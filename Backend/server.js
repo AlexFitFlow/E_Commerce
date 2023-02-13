@@ -4,7 +4,8 @@ const fs = require("fs");
 require('dotenv').config();
 // This is your test secret API key.
 const stripe = require("stripe")(process.env.products);
-const YOUR_DOMAIN = "http://localhost:3000";
+const {YOUR_DOMAIN} = process.env;
+const {FRONT_END_BASE_URL} = process.env;
 
 // Creates a product in the Stripe API. It takes the product information, such as title and description, and 
 // metadata (such as product title and data ID) as input, and returns the product object created in the Stripe API
@@ -302,8 +303,8 @@ app.post("/checkout", async (req, res) => {
 		mode: "payment",
 		// success_url: `http://localhost:3001/checkout/success`,
 		// cancel_url: `http://localhost:3001/checkout/cancel`,
-		success_url: `http://localhost:3000/success`,
-		cancel_url: `http://localhost:3000/cancel`,
+		success_url: `${FRONT_END_BASE_URL}/success`,
+		cancel_url: `${FRONT_END_BASE_URL}/cancel`,
 		custom_text: {
             submit: {
                 message: 'Card Info: 4242424242424242 - Date: Any future date - CVC: Any 3 numbers'

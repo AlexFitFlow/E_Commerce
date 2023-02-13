@@ -6,10 +6,6 @@ import { useSelector } from "react-redux";
 // Link To Product's Page
 import { Link } from "react-router-dom";
 
-// Payment Option's Image's
-// import Credit from "../components/Credit";
-
-
 // AOS Effects
 import { useEffect } from "react";
 import AOS from "aos";
@@ -105,7 +101,7 @@ const Checkout = () => {
 
 									let response = await axios({
 										method: "post",
-										url: "http://localhost:3001/checkout",
+										url: `${process.env.REACT_APP_BASE_URL}/checkout`,
 										data: {
 											products,
 											shipping,
