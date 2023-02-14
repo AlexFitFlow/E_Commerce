@@ -118,7 +118,7 @@ app.use(express.static("public"));
 
 // The cors middleware is then used to handle CORS headers.
 app.use(cors({
-	origin: [`${FRONT_END_BASE_URL}`]
+	origin: `${FRONT_END_BASE_URL}`
 }));
 
 // The express.json middleware is used to parse incoming request bodies in JSON format.
