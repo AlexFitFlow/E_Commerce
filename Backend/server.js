@@ -128,7 +128,9 @@ app.get("/cart", function (req, res) {
 app.use(express.static("public"));
 
 // The cors middleware is then used to handle CORS headers.
-app.use(cors());
+app.use(cors({
+	origin: [FRONT_END_BASE_URL]
+}));
 
 // The express.json middleware is used to parse incoming request bodies in JSON format.
 app.use(express.json());
