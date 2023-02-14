@@ -128,9 +128,9 @@ app.get("/cart", function (req, res) {
 app.use(express.static("public"));
 
 // The cors middleware is then used to handle CORS headers.
-app.use(cors({
-	origin: [`${FRONT_END_BASE_URL}`]
-}));
+// app.use(cors({
+// 	origin: [`${FRONT_END_BASE_URL}`]
+// }));
 
 // The express.json middleware is used to parse incoming request bodies in JSON format.
 app.use(express.json());
@@ -266,6 +266,7 @@ app.post("/products/seed", async function (req, res) {
 app.post("/checkout", cors({
     origin: '*'
 }), async (req, res) => {
+	console.log("Endpoint")
 	// Data sent from frontend axios request in data param is accessed on req.body
 	// console.log("REQUEST DATA: ", req.body);
 	// console.log("REQUEST QUERY: ", req.query);
