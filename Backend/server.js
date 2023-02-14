@@ -111,6 +111,8 @@ const cors = require("cors");
 // The express function is then invoked to create an instance of the Express application
 const app = express();
 
+app.options(FRONT_END_BASE_URL, cors())
+
 // A GET route is defined for the root path ("/") that returns a response of "home".
 app.get("/", (req, res) => {
 	// res.send('hello world')
