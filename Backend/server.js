@@ -7,7 +7,6 @@ const stripe = require("stripe")(process.env.products);
 const {YOUR_DOMAIN} = process.env;
 const {FRONT_END_BASE_URL} = process.env;
 const allowedOrigins = process.env.allowedOrigins;
-console.log(allowedOrigins)
 
 // Creates a product in the Stripe API. It takes the product information, such as title and description, and 
 // metadata (such as product title and data ID) as input, and returns the product object created in the Stripe API
@@ -120,6 +119,7 @@ app.use(express.static("public"));
 
 // The cors middleware is then used to handle CORS headers.
 const origins=allowedOrigins.split(" ")
+console.log(origins)
 app.use(cors({
 	origin: origins
 }));
