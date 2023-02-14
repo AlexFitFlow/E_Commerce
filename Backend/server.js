@@ -113,6 +113,23 @@ const app = express();
 
 // app.options(FRONT_END_BASE_URL, cors())
 
+// The express.static middleware is used to serve a public directory. The name of the directory is "public"
+app.use(express.static("public"));
+
+// The cors middleware is then used to handle CORS headers.
+app.use(cors({
+	origin: [`${FRONT_END_BASE_URL}`]
+}));
+
+// The express.json middleware is used to parse incoming request bodies in JSON format.
+app.use(express.json());
+
+// The express.urlencoded middleware is used to parse incoming request bodies as URL-encoded data. 
+// This middleware is configured with the { extended: true } option, which allows for rich objects 
+// and arrays to be encoded into the URL-encoded format.
+app.use(express.urlencoded({ extended: true }));
+
+
 // A GET route is defined for the root path ("/") that returns a response of "home".
 app.get("/", (req, res) => {
 	// res.send('hello world')
@@ -123,23 +140,6 @@ app.get("/", (req, res) => {
 app.get("/cart", function (req, res) {
 	res.send("cart test");
 });
-
-// The express.static middleware is used to serve a public directory. The name of the directory is "public"
-app.use(express.static("public"));
-
-// The cors middleware is then used to handle CORS headers.
-// app.use(cors({
-// 	origin: [`${FRONT_END_BASE_URL}`]
-// }));
-
-// The express.json middleware is used to parse incoming request bodies in JSON format.
-app.use(express.json());
-
-// The express.urlencoded middleware is used to parse incoming request bodies as URL-encoded data. 
-// This middleware is configured with the { extended: true } option, which allows for rich objects 
-// and arrays to be encoded into the URL-encoded format.
-app.use(express.urlencoded({ extended: true }));
-
 // Setting up a GET endpoint on the Express server at the path "/products". When a GET request is 
 // made to this endpoint, the code inside the function will run.
 app.get("/products", async function (req, res) {
@@ -263,9 +263,7 @@ app.post("/products/seed", async function (req, res) {
 
 
 
-app.post("/checkout", cors({
-    origin: '*'
-}), async (req, res) => {
+app.post("/checkout", cors(), async (req, res) => {
 	console.log("Endpoint")
 	// Data sent from frontend axios request in data param is accessed on req.body
 	// console.log("REQUEST DATA: ", req.body);
