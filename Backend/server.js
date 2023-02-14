@@ -263,7 +263,7 @@ app.post("/products/seed", async function (req, res) {
 
 
 
-app.post("/checkout", async (req, res) => {
+app.post("/checkout", cors(), async (req, res) => {
 	// Data sent from frontend axios request in data param is accessed on req.body
 	// console.log("REQUEST DATA: ", req.body);
 	// console.log("REQUEST QUERY: ", req.query);
