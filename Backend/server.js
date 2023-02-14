@@ -6,6 +6,8 @@ require('dotenv').config();
 const stripe = require("stripe")(process.env.products);
 const {YOUR_DOMAIN} = process.env;
 const {FRONT_END_BASE_URL} = process.env;
+const allowedOrigins = process.env.allowedOrigins;
+console.log(allowedOrigins)
 
 // Creates a product in the Stripe API. It takes the product information, such as title and description, and 
 // metadata (such as product title and data ID) as input, and returns the product object created in the Stripe API
@@ -117,8 +119,9 @@ const app = express();
 app.use(express.static("public"));
 
 // The cors middleware is then used to handle CORS headers.
+const origins=allowedOrigins.split(" ")
 app.use(cors({
-	origin: `${FRONT_END_BASE_URL}`
+	origin: origins
 }));
 
 // The express.json middleware is used to parse incoming request bodies in JSON format.
