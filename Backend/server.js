@@ -111,7 +111,7 @@ const cors = require("cors");
 // The express function is then invoked to create an instance of the Express application
 const app = express();
 
-app.options(FRONT_END_BASE_URL, cors())
+// app.options(FRONT_END_BASE_URL, cors())
 
 // A GET route is defined for the root path ("/") that returns a response of "home".
 app.get("/", (req, res) => {
@@ -129,7 +129,7 @@ app.use(express.static("public"));
 
 // The cors middleware is then used to handle CORS headers.
 app.use(cors({
-	origin: [FRONT_END_BASE_URL]
+	origin: [`${FRONT_END_BASE_URL}`]
 }));
 
 // The express.json middleware is used to parse incoming request bodies in JSON format.
