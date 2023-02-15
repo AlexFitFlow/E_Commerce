@@ -1,0 +1,51 @@
+
+name: Deploy
+on:
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  build-and-deploy:
+
+    runs-on: ubuntu-latest
+
+    env:
+      SSH_KEY: ${{secrets.FWGHA_RSA}}
+      MACHINE: fwgha@${{secrets.LIVE_SERVER_IP}}
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js 14
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14
+    - name: npm install build frontend
+      working-directory: /Frontend
+      run: |
+        touch .env
+        echo REACT_APP_GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }} >> .env
+        echo REACT_APP_BASE_URL=${{ secrets.API_URL_LIVE }} >> .env
+        cat .env
+        npm install
+        npm run build
+    - name: npm install backend
+      working-directory: /Backend
+      run: |
+        touch .env
+        echo products=${{ secrets.STRIPE_KEY }} >> .env
+        echo YOUR_DOMAIN=${{ secrets.API_URL_LIVE }} >> .env
+        echo FRONT_END_BASE_URL=${{ secrets.SITE_URL_LIVE }} >> .env
+        echo allowedOrigins=${{ secrets.SITE_URL_LIVE }} >> .env
+        cat .env
+        npm install
+    - name: ssh init
+      run: |
+        mkdir ~/.ssh
+        touch ~/.ssh/id_rsa.pub
+        cat "$SSH_KEY" > ~/.ssh/id_rsa.pub
+    - name: ssh test
+      run: |
+        touch ~/test.txt
+        cat "Test" > ~/test.txt
+        rsync -a ~/test.txt $MACHINE:~/public_html/
