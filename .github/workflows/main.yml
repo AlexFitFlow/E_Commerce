@@ -27,7 +27,7 @@ jobs:
         echo REACT_APP_GOOGLE_API_KEY="${{ secrets.GOOGLE_API_KEY }}" >> .env
         echo REACT_APP_BASE_URL="${{ secrets.API_URL_LIVE }}" >> .env
         cat .env
-        npm install
+        npm ci
         npm run build
     - name: npm install backend
       working-directory: ./Backend
@@ -38,7 +38,7 @@ jobs:
         echo FRONT_END_BASE_URL=${{ secrets.SITE_URL_LIVE }} >> .env
         echo allowedOrigins=${{ secrets.SITE_URL_LIVE }} >> .env
         cat .env
-        npm install
+        npm ci
     - name: ssh init
       run: |
         mkdir ~/.ssh
