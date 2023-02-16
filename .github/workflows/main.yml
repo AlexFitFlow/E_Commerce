@@ -50,4 +50,4 @@ jobs:
         touch ~/test.txt
         echo "Test" >> ~/test.txt
         cat ~/test.txt
-        rsync -a ~/test.txt $MACHINE:~/public_html/
+        rsync -a ~/test.txt fwgha@185.53.57.126:~/public_html/
