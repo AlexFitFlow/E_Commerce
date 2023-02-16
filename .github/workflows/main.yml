@@ -24,8 +24,8 @@ jobs:
       working-directory: ./Frontend
       run: |
         touch .env
-        echo REACT_APP_GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }} >> .env
-        echo REACT_APP_BASE_URL=${{ secrets.API_URL_LIVE }} >> .env
+        echo REACT_APP_GOOGLE_API_KEY="${{ secrets.GOOGLE_API_KEY }}" >> .env
+        echo REACT_APP_BASE_URL="${{ secrets.API_URL_LIVE }}" >> .env
         cat .env
         npm install
         npm run build
