@@ -45,9 +45,19 @@ jobs:
         touch ~/.ssh/id_rsa.pub
         echo $SSH_KEY >> ~/.ssh/id_rsa.pub
         cat ~/.ssh/id_rsa.pub
-    - name: ssh test
+    - name: ssh test file creation
       run: |
         touch ~/test.txt
         echo "Test" >> ~/test.txt
         cat ~/test.txt
-        rsync -av ~/test.txt fwgha@185.53.57.126:~/public_html/
+        cat ~/test.txt
+        
+- name: Deploy with rsync
+    uses: burnett01/rsync-deployments@5.2.1
+    with:
+      switches: -avzr --delete
+      path: ~/test.text
+      remote_path: ~/
+      remote_host: 185.53.57.126
+      remote_user: fwgha
+      remote_key: ${{ secrets.FWGPHA_KEY }}
