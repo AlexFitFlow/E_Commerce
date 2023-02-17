@@ -68,24 +68,39 @@ In conclusion, the e-commerce platform is a well-rounded and complete solution f
 ## Dependencies
 
 
-|    Frontend   |    Backend    |
-| ------------- | ------------- |
-|      aos     | cors   |
-|   axios      | stripe    |
-|   bootstrap  | express  |
-| font-awesome | cors    |
-| @emotion/react | dotenv   |
-| @emotion/styled |      |
-| @mui/icons-material |      |
-| @mui/material|    |
-| @reduxjs/toolkit|     |
-| @react-google-maps/api|     |
-| react-bootstrap  |     |
-| react-fast-marquee |    |
-| react-redux |     |
-| react-router-dom |     |
-| stripe |     |
+|    Install   | 
+| ------------- | 
+|      aos     | 
+|   axios      | 
+|   bootstrap  | 
+|   cors       | 
+|   dotenv     |  
+| express |  
+| font-awesome |  
+| @emotion/react |  
+| @emotion/styled |  
+| @mui/icons-material |  
+| @mui/material|  
+| @reduxjs/toolkit|   
+| @react-google-maps/api|   
+| react-bootstrap  |   
+| react-fast-marquee |  
+| react-redux |    
+| react-router-dom |  
+| stripe |  
 
+
+## Updating the Projects section
+
+![Projects Preview](/README_images/Preview1.png)
+![Projects Preview](/README_images/Preview2.png)
+![Projects Preview](/README_images/Preview3.png)
+![Projects Preview](/README_images/Preview4.png)
+![Projects Preview](/README_images/Preview5.png)
+![Projects Preview](/README_images/Preview6.png)
+![Projects Preview](/README_images/Preview7.png)
+![Projects Preview](/README_images/Preview8.png)
+![Projects Preview](/README_images/Preview9.png)
 
 
 ## Start Project
