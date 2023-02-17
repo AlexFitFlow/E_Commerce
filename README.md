@@ -90,20 +90,38 @@ In conclusion, the e-commerce platform is a well-rounded and complete solution f
 | stripe |  
 
 
-## Updating the Projects section
-
-![Projects Preview](/README_images/Preview1.png)
-![Projects Preview](/README_images/Preview2.png)
-![Projects Preview](/README_images/Preview3.png)
-![Projects Preview](/README_images/Preview4.png)
-![Projects Preview](/README_images/Preview5.png)
-![Projects Preview](/README_images/Preview6.png)
-![Projects Preview](/README_images/Preview7.png)
-![Projects Preview](/README_images/Preview8.png)
-![Projects Preview](/README_images/Preview9.png)
-
-
 ## Start Project
 
  * Frontend - npm start
  * Backend - node server.js
+
+
+## Updating the Projects section
+
+###### **Home Page**
+![Projects Preview](/README_images/Preview8.png)
+
+###### **Products List**
+![Projects Preview](/README_images/Preview9.png)
+
+###### **Dark Mode/About Page**
+![Projects Preview](/README_images/Preview7.png)
+
+###### **Google Maps API**
+![Projects Preview](/README_images/Preview6.png)
+
+###### **Individual Product Page**
+![Projects Preview](/README_images/Preview5.png)
+
+###### **Cart Page**
+![Projects Preview](/README_images/Preview2.png)
+
+###### **Stripe API Checkout**
+![Projects Preview](/README_images/Preview4.png)
+
+###### **Successful Checkout!**
+![Projects Preview](/README_images/Preview3.png)
+
+
+
+
