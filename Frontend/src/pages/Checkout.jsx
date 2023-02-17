@@ -107,7 +107,7 @@ const Checkout = () => {
 											shipping,
 										},
 									}).catch((error) => error.response);
-
+									// Stripe checkout disabled at the moment
 									// Should see the response we sent back from the server in the browser console
 									// console.log("RESPONSE FROM SERVER: ", response);
 									// if (response.data.url) {

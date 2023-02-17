@@ -86,8 +86,9 @@ return <>
                 />
                 
                 {/* Button */}
+                {/* Disabled button is only temporary */}
                 <div className="graphic2 btn-2" style={{ display: 'flex'}}>
-                    <Button className="mx-2 login-button" style={{fontWeight: 'bold'}} onClick={onSubmit}>
+                    <Button className="mx-2 login-button" style={{fontWeight: 'bold'}} onClick={onSubmit} disabled>
                         Signup
                     </Button>
                 </div>
