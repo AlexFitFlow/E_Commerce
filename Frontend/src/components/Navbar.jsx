@@ -42,6 +42,7 @@ const Navbar = () => {
                 className="card-img box-shadow3"
                 src={logo}
                 alt="Card"
+                style={{ width: 'auto' }}
                 height={100}/>
                 </NavLink>
 
