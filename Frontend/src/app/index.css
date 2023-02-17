@@ -2125,3 +2125,9 @@ Preview Carousel
     display: block;
     background: var(--clr-lightBlueToBlack);
 } */
+
+
+.card-show {
+    width: 20rem;
+    margin: auto;
+}

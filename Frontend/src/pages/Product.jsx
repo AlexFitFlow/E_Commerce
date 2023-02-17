@@ -176,7 +176,7 @@ const ShowSimilarProduct = () => {
 
                       {/* Card Picture */}
                       <img
-                        className="card-img-top p-3 box-shadow"
+                        className="card-img-top card-show p-3 box-shadow"
                         src={process.env.PUBLIC_URL+"/" + item.image}
                         alt="Card"
                         height={300}

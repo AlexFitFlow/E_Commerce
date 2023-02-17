@@ -287,7 +287,7 @@ const AboutPage = () => {
 
                 {/* Front Side */}
                 <div className="front" style = {{height: '30vh', borderRadius: '5rem'}}>
-                  <img className="card-img-top img" src="./assets/main3.jpg" alt="Paypal" style={{objectFit: 'cover', height: 'inherit', borderRadius: '2rem'}} />
+                  <img className="card-img-top img" src="./assets/Main3.jpg" alt="Paypal" style={{objectFit: 'cover', height: 'inherit', borderRadius: '2rem'}} />
                   <div className="inner">
                     <p className="mt-5 improv" style = {{fontSize: '1.3rem'}}>Equipment</p>
                   </div>
@@ -295,7 +295,7 @@ const AboutPage = () => {
 
                 {/* Back Side */}
                 <div className="back" style = {{height: '30vh', borderRadius: '5rem'}}>
-                  <img className="card-img-top img" src="./assets/main3.jpg" alt="Paypal" style={{objectFit: 'fill', height: 'inherit', borderRadius: '1.5rem'}} />
+                  <img className="card-img-top img" src="./assets/Main3.jpg" alt="Paypal" style={{objectFit: 'fill', height: 'inherit', borderRadius: '1.5rem'}} />
                   <div className="inner">
                     <p className="mt-5 improv" style = {{fontSize: '1.3rem'}}>Weights, Treadmills, etc</p>
                   </div>
