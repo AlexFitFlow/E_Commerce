@@ -1,5 +1,8 @@
 # Fitness Warehouse
 
+
+## Breakdown
+
 The Fitness Warehouse e-commerce platform is built using React and Node.js, with the front-end being created in React for a dynamic and interactive user experience. Styling is achieved using FontAwesome, Bootstrap, and the AOS library for animations triggered when the user scrolls the page. The back-end is implemented using Node.js and Express, and data is stored using MongoDB, which also serves as the user account information database. Stripe API is used to process financial transactions. The state management of the application is handled using Redux, making it easier to manage the data and ensure consistency throughout the application.
 
 The product details page displays individual product information, including images, descriptions, and additional information. The product list page also has filters to sort products based on their category. The checkout page displays an order summary of items in the cart, which is stored in the Redux store, allowing users to add and remove products as they see fit and keep track of the total cost. When the user is ready to make a purchase, the shopping cart feature handles the financial transactions through the Stripe API, a secure and efficient payment processing platform that provides a wide range of tools and APIs for accepting payments online, ensuring a seamless purchase process for the user with their financial information kept safe.
@@ -96,30 +99,30 @@ In conclusion, the e-commerce platform is a well-rounded and complete solution f
  * Backend - node server.js
 
 
-## Updating the Projects section
+## Preview Photos
 
-###### **Home Page**
+### **Home Page**
 ![Projects Preview](/README_images/Preview8.png)
 
-###### **Products List**
+### **Products List**
 ![Projects Preview](/README_images/Preview9.png)
 
-###### **Dark Mode/About Page**
+### **Dark Mode/About Page**
 ![Projects Preview](/README_images/Preview7.png)
 
-###### **Google Maps API**
+### **Google Maps API**
 ![Projects Preview](/README_images/Preview6.png)
 
-###### **Individual Product Page**
+### **Individual Product Page**
 ![Projects Preview](/README_images/Preview5.png)
 
-###### **Cart Page**
+### **Cart Page**
 ![Projects Preview](/README_images/Preview2.png)
 
-###### **Stripe API Checkout**
+### **Stripe API Checkout**
 ![Projects Preview](/README_images/Preview4.png)
 
-###### **Successful Checkout!**
+### **Successful Checkout**
 ![Projects Preview](/README_images/Preview3.png)
 
 
